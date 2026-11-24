@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            display: flex;
+            /* row-gap: 5px;
+            column-gap: 5px; */
+            gap: 10px;
+            flex-wrap: wrap; /* nowrap , wrap-reverse*/
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .container div{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            color: white;
+            font-size: 1.2em;
+        }
+        #d1{
+            align-self: flex-start;
+        }
+        #d3{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="d1">1</div>
+        <div>2</div>
+        <div id="d3">3</div>
+        
+    </div>
+
+</body>
+</html>

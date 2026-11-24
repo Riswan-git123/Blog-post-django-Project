@@ -1,0 +1,9 @@
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/index" }],
+  "functions": {
+    "api/index.py": {
+      "includeFiles": "django/1hr/workspace/myapp/**",
+      "excludeFiles": "{**/tutorial-env/**,django/1hr/workspace/html/**}"
+    }
+  }
+}
